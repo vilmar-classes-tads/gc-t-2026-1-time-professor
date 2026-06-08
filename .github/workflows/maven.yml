@@ -12,7 +12,7 @@ on:
       - develop
 
 jobs:
-  build:
+  build-and-docker:
     runs-on: ubuntu-latest
 
     steps:
