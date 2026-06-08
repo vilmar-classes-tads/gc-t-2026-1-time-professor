@@ -33,9 +33,4 @@ jobs:
         run: docker build -t sistema-editais:latest .
 
       - name: 5. Testar a Execução do Container (Smoke Test)
-        run: |
-          docker run -d --name app-editais sistema-editais:latest
-          
-          sleep 10 
-          
-          docker ps | grep app-editais
+        run: docker run --name app-editais sistema-editais:latest
